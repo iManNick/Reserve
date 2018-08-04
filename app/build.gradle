@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
+    useLibrary 'org.apache.http.legacy'
     compileSdkVersion 27
     buildToolsVersion '27.0.3'
     defaultConfig {
@@ -25,8 +26,8 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support.constraint:constraint-layout:1.1.0'
-    implementation 'com.google.firebase:firebase-database:15.0.1'
-    implementation 'com.google.firebase:firebase-auth:15.1.0'
+
+
     testImplementation 'junit:junit:4.12'
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.android.support:customtabs:27.1.1'
@@ -40,8 +41,9 @@ dependencies {
     //PersianCalender
     implementation 'com.mohamadamin:persianmaterialdatetimepicker:1.2.1'
     //implementation 'com.github.hamsaadev:Persian-Date-Picker-Dialog:V1.2'
-    implementation 'com.firebaseui:firebase-ui-auth:3.3.1'
-    implementation 'com.google.firebase:firebase-core:15.0.2'
+    //implementation 'org.apache.httpcomponents:httpmime:4.2.6'
+
+    implementation  'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation  'com.squareup.retrofit2:converter-gson:2.1.0'
 }
 
-apply plugin: 'com.google.gms.google-services'

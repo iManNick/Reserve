@@ -7,129 +7,20 @@
     <string name="backdrop_subtitle">شهر مورد نظر خود را انتخاب کنید</string>
     <string name="title_activity_reserve">رزرو</string>
     <string name="tab_text_1">تاریخ ورود/خروج</string>
-    <string name="tab_text_2">انتخاب اتاق</string>
-    <string name="tab_text_3">ثبت نام</string>
+    <string name="tab_text_3">Under Construction</string>
     <string name="title_activity_login">ورود</string>
 
     <!-- Strings related to login -->
-    <string name="prompt_email">ایمیل</string>
-    <string name="prompt_password">پسورد (اختیاری)</string>
-    <string name="action_sign_in">ورود یا ثبت نام</string>
-    <string name="action_sign_in_short">ورود</string>
-    <string name="error_invalid_email">فرمت ایمیل وارد شده نادرست است</string>
-    <string name="error_invalid_password">رمز کوتاه است</string>
-    <string name="error_incorrect_password">رمز نادرست</string>
-    <string name="error_field_required">این قسمت ضروری است</string>
-    <string name="permission_rationale">"اجازه دسترسی به مخاطبین برای کامل کردن ایمیل نیاز است."
-
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
     </string>
-    <string name="sign_in_cancelled">لغو ورود</string>
-    <string name="no_internet_connection">عدم دسترسی به اینترنت</string>
-    <string name="unknown_error">خطای ناشناخته</string>
 
-
-    <!-- Common -->
-    <string name="fui_default_toolbar_title" translatable="false">ثبت نام/ورود به سامانه رزرو آنلاین هتل ها</string>
-    <string name="fui_progress_dialog_loading" translation_description="Loading text in dialog">در حال بارگذاری…</string>
-    <string name="fui_sign_in_default" translation_description="Button text to sign in">ورود</string>
-
-    <!-- Provider -->
-    <string name="fui_idp_name_google">گوگل</string>
-    <string name="fui_idp_name_facebook">Facebook</string>
-    <string name="fui_idp_name_twitter">Twitter</string>
-
-    <!-- Auth method picker -->
-    <string name="fui_sign_in_with_google" translation_description="Sign in button text">ورود توسط حساب گوگل</string>
-    <string name="fui_sign_in_with_facebook" translation_description="Sign in button text">Sign in with Facebook</string>
-    <string name="fui_sign_in_with_twitter" translation_description="Sign in button text">Sign in with Twitter</string>
-    <string name="fui_sign_in_with_email" translation_description="Sign in button text">ورود توسط ایمیل</string>
-    <string name="fui_sign_in_with_phone" translation_description="Sign in button text">ورود توسط شماره تلفن</string>
-
-    <!-- Email common-->
-    <string name="fui_next_default" translation_description="Button text to continue">بعدی</string>
-    <string name="fui_email_hint" translation_description="Hint in email input field">ایمیل</string>
-    <string name="fui_phone_hint" translation_description="Hint for phone input field">شماره تلفن</string>
-    <string name="fui_password_hint" translation_description="Hint for password input field">رمزعبور</string>
-    <string name="fui_required_field" translation_description="Inline error for required field">این قسمت ضروری است.</string>
-    <string name="fui_invalid_email_address" translation_description="Inline error for invalid email address">ایمیل وارد شده صحیح نیست.</string>
-    <string name="fui_missing_email_address" translation_description="Inline error for empty email address in input field">برای ادامه ایمیل خود را وارد کنید</string>
-    <string name="fui_progress_dialog_checking_accounts" translation_description="Progress dialog text while checking for existing accounts">بررسی وجود حساب…</string>
-
-    <!-- Email sign up -->
-    <string name="fui_title_register_email" translation_description="Title for signup form">ثبت نام</string>
-    <string name="fui_name_hint" translation_description="Hint for last name input field">نام و نام خانوادگی</string>
-    <string name="fui_button_text_save" translation_description="Button text to save input form">ذخیره</string>
-    <string name="fui_progress_dialog_signing_up" translation_description="Dialog text while waiting for server's signup response">در حال ثبت نام…</string>
-    <plurals name="fui_error_weak_password" translation_description="Inline error for weak password">
-        <item quantity="one" translation_description="Inline error for weak password">رمز عبور به اندازه کافی قوی نیست. حداقل از %1$d کاراکتر و ترکیبی از حروف و اعداد استفاده کنید.</item>
-        <item quantity="other" translation_description="Inline error for weak password">رمز عبور به اندازه کافی قوی نیست. حداقل از %1$d کاراکتر و ترکیبی از حروف و اعداد استفاده کنید.</item>
-    </plurals>
-    <string name="fui_email_account_creation_error" translation_description="Inline error for signup failure">ثبت نام حساب ایمیل ناموفق بود.</string>
-    <string name="fui_create_account_preamble_tos_and_pp" translation_description="Text shown when creating an account with both terms of service and privacy policy.">با ضربه زدن به <xliff:g example="SAVE" id="btn" translation_description="">%1$s</xliff:g>  نشان می دهید که شما موافق هستید با <xliff:g example="https://google.com/terms" id="tos" translation_description="">%2$s</xliff:g> و <xliff:g example="https://google.com/privacy" id="pp" translation_description="">%3$s</xliff:g>.</string>
-    <string name="fui_create_account_preamble_tos_only" translation_description="Text shown when creating an account with only terms of service">با ضربه زدن به <xliff:g example="SAVE" id="btn" translation_description="">%1$s</xliff:g>  نشان می دهید که شما موافق هستید با <xliff:g example="https://google.com/terms" id="tos" translation_description="">%2$s</xliff:g>.</string>
-    <string name="fui_create_account_preamble_pp_only" translation_description="Text shown when creating an account with only privacy policy">با ضربه زدن به <xliff:g example="SAVE" id="btn" translation_description="">%1$s</xliff:g> نشان می دهید که شما موافق هستید با <xliff:g example="https://google.com/privacy" id="pp" translation_description="">%2$s</xliff:g>.</string>
-    <string name="fui_terms_of_service" translation_description="Link text to web url containing the app's terms of service">شرایط استفاده از خدمات</string>
-    <string name="fui_privacy_policy" translation_description="Link text to web url containing the app's privacy policy">سیاست حفظ حریم خصوصی</string>
-    <string name="fui_email_field_name" translatable="false">فیلدایمیل</string>
-
-    <!-- Idp/Email welcome back -->
-    <string name="fui_title_welcome_back_idp_prompt" translatable="false">@string/fui_sign_in_default</string>
-    <string name="fui_title_welcome_back_password_prompt" translatable="false">@string/fui_sign_in_default</string>
-    <string name="fui_welcome_back_idp_header" translation_description="Inline subtitle to users whose signup was interrupted since an existing account was detected">شما در حال حاضر یک حساب کاربری دارید</string>
-    <string name="fui_welcome_back_email_header" translation_description="Message for returning users">خوش آمدید!</string>
-    <string name="fui_welcome_back_idp_prompt" translation_description="Message to users that need to signin using existing IDP accounts">
-        شما قبلا از <xliff:g example="jane.doe@example.com" id="email_addr" translation_description="">%1$s</xliff:g> استفاده کرده اید.
-         میتوانید توسط حساب <xliff:g example="Google" id="provider_name" translation_description="">%2$s</xliff:g> وارد شوید.
-    </string>
-    <string name="fui_welcome_back_password_prompt_body" translation_description="Message to users that need to signin using existing email accounts">
-        شما قبلا برای ورود از <xliff:g example="jane.doe@example.com" id="email_addr" translation_description="">%1$s</xliff:g>
-        استفاده کرده اید. رمز آنرا وارد کنید.
-    </string>
-    <string name="fui_progress_dialog_signing_in" translation_description="Progress dialog text">در حال ورود…</string>
-    <string name="fui_trouble_signing_in" translation_description="Link leading to forgot password flow">فراموشی رمز عبور</string>
-
-    <!-- Password recovery -->
-    <string name="fui_title_recover_password_activity" translation_description="Recover password screen title">بازیابی رمزعبور</string>
-    <string name="fui_title_confirm_recover_password" translation_description="Password recovery confirmation message">ایمیل خود را چک کنید.</string>
-    <string name="fui_password_recovery_body" translation_description="Password recovery message body">دستورالعمل های ارسال شده به این ایمیل که توضیح میدهد چگونه گذرواژه خود را بازنشانی کنید.</string>
-    <string name="fui_button_text_send" translation_description="Button text to send recovery email">ارسال</string>
-    <string name="fui_confirm_recovery_body" translation_description="Alert dialog displayed after password recovery email is sent">دستورالعمل ارسال شده به %1$s را دنبال کنید تا رمز عبور خود را بازیابی کنید.</string>
-    <string name="fui_progress_dialog_sending" translation_description="Progress dialog while password recovery email is being sent">در حال ارسال…</string>
-    <string name="fui_error_email_does_not_exist" translation_description="Inline error when user attempt signin with invalid account">آدرس ایمیل وارد شده موجود نیست</string>
-
-    <!-- Other error messages -->
-    <string name="fui_error_unknown" translation_description="General error messages for an unknown failure.">یک خطای ناشناخته رخ داده است.</string>
-    <string name="fui_error_invalid_password" translation_description="Error message for when the user enters an invalid or wrong password.">رمز عبور اشتباه است.</string>
-
-    <!-- Accessibility -->
-    <string name="fui_accessibility_logo" translation_description="Content description for app logo">لوگوی برنامه</string>
-
-    <!-- Phone number auth -->
-    <string name="fui_verify_phone_number_title" translation_description="Phone number entry form title">شماره تلفن خود را وارد کنید</string>
-    <string name="fui_invalid_phone_number" translation_description="Inline error when phone number entered is invalid">شماره تلفن معتبر وارد کنید</string>
-    <string name="fui_enter_confirmation_code" translation_description="Phone number verification code entry form title">کد 6 رقمی که ارسال شد را وارد کنید</string>
-    <string name="fui_resend_code_in" translation_description="Countdown timer text that the user needs to wait for before attempting to resend verification sms">ارسال مجدد کد در 0:%02d</string>
-    <string name="fui_verify_your_phone_title" translation_description="Button text to complete phone number verification">شماره تلفن خود را تایید فرمایید</string>
-    <string name="fui_verifying" translation_description="Progress dialog text while phone number is being verified">در حال تایید کردن…</string>
-    <string name="fui_retrieving_sms" translation_description="Progress dialog text when sms is being retrieved before auto-submit">درحال گرفتن پیامک…</string>
-    <string name="fui_incorrect_code_dialog_body" translation_description="Inline error when incorrect sms verification code is being used to verify">کد اشتباه. دوباره امتحان کنید.</string>
-    <string name="fui_incorrect_code_dialog_positive_button_text" translation_description="Text to dismiss error alert dialog">باشه</string>
-    <string name="fui_error_too_many_attempts" translation_description="Error message when the phone number has been used too many times">این شماره تلفن چندین بار استفاده شده است</string>
-    <string name="fui_error_quota_exceeded" translation_description="Error message when the Firebase project's quota has been exceeded.">مشکلی در تأیید شماره تلفن شما وجود داشت</string>
-    <string name="fui_error_session_expired" translation_description="Error message when SMS confirmation code has expired.">این کد دیگر معتبر نیست</string>
-    <string name="fui_sign_in_with_phone_number" translation_description="Label for phone number input form">با شماره تلفن وارد شوید</string>
-    <string name="fui_done" translation_description="Progress dialog success transition once sms is sent">انجام شد</string>
-    <string name="fui_verified" translation_description="Progress dialog success transition when phone number was verified">تایید شد!</string>
-    <string name="fui_code_sent" translation_description="Progress dialog success transition once sms is sent">کد ارسال شد!</string>
-    <string name="fui_resending" translation_description="Progress dialog text when user clicks on resend sms">درحال ارسال دوباره…</string>
-    <string name="fui_resend_code" translation_description="Link text to resend verification sms">ارسال دوباره کد</string>
-    <string name="fui_verify_phone_number" translation_description="Button text to submit confirmation code and complete phone verification">تایید شماره تلفن</string>
-    <string name="fui_continue_phone_login" translation_description="Button text to submit phone number and send sms">ادامه</string>
-    <string name="fui_sms_terms_of_service" translation_description="Fine print warning displayed below Verify Phone Number button">با ضربه زدن روی “%1$s”ممکن است یک پیامک ارسال شود. لطفا در ورود شماره تلفن دقت کنید. </string>
-    <string name="title_activity_navi">NaviActivity</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
 </resources>

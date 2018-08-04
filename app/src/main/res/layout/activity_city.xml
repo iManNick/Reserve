@@ -69,11 +69,6 @@
                 app:layout_collapseMode="pin"
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
-            <Button
-                android:id="@+id/signout"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Button" />
 
         </android.support.design.widget.CollapsingToolbarLayout>
 
