@@ -59,43 +59,47 @@
     <EditText
         android:id="@+id/editText6"
         android:layout_width="55dp"
-        android:layout_height="36dp"
-        android:layout_alignParentEnd="true"
-        android:layout_below="@+id/checkIn"
-        android:layout_marginEnd="103dp"
+        android:layout_height="32dp"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_toStartOf="@+id/textView6"
         android:ems="10"
         android:inputType="number" />
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editText6"
+        android:layout_width="111dp"
+        android:layout_height="31dp"
+        android:layout_above="@+id/rezfinal"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="46dp"
-        android:text="تعداد" />
+        android:text="تعداد اتاق درخواستی" />
 
 
     <Button
         android:id="@+id/rezfinal"
-        android:layout_width="match_parent"
+        android:layout_width="224dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/editText10"
         android:background="@color/colorPrimary"
         android:text="رزرو"
         android:textColor="@android:color/white" />
 
     <EditText
         android:id="@+id/editText10"
-        android:layout_width="wrap_content"
+        android:layout_width="132dp"
         android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText6"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/checkIn"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Type" />
 
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_room_list"
+        android:layout_width="match_parent"
+        android:layout_height="311dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/checkIn" />
 
 </RelativeLayout>
 
