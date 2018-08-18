@@ -15,36 +15,22 @@
         android:orientation="vertical"
         android:padding="5dp">
 
-        <!-- TextView Room Type -->
+        <!-- TextView Comment's Username -->
         <TextView
-            android:id="@+id/txt_room_type"
+            android:id="@+id/txt_users_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textStyle="bold" />
 
-        <!-- TextView Room Price -->
-
+        <!-- TextView Users's Comments -->
         <TextView
-            android:id="@+id/txt_room_price"
+            android:id="@+id/txt_users_comment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-
-        <!-- TextView Room Food -->
+        <!-- TextView Users's Rating -->
         <TextView
-            android:id="@+id/txt_room_food"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <!-- TextView Room AvRoom -->
-        <TextView
-            android:id="@+id/txt_room_avroom"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <!-- TextView Room Size -->
-        <TextView
-            android:id="@+id/txt_room_size"
+            android:id="@+id/txt_users_rating"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 

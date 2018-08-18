@@ -4,13 +4,65 @@
     android:layout_height="match_parent"
     tools:context=".activity.Fragments.TwoFragment">
 
-    <TextView
+    <Button
+
+        android:id="@+id/commentbut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="comments"
-        android:textSize="40sp"
-        android:textStyle="bold" />
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/ratingBar"
+        android:background="@color/colorPrimary"
+        android:text="ثبت نظر"
+        android:textColor="@android:color/white" />
 
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_comments"
+        android:layout_width="match_parent"
+        android:layout_height="329dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/textView4" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/commentText" />
+
+    <EditText
+        android:id="@+id/commentText"
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="نظر شما در مورد این هتل چیست؟"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/ratingBar"
+        android:text=" نظر کاربران"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/commentbut"
+        android:text="امتیاز کاربران" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3"
+        android:text="0 از 5" />
 </RelativeLayout>
 
