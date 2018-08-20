@@ -10,9 +10,9 @@ public class Comment {
     @SerializedName("comment")
     private String comment;
     @SerializedName("rating")
-    private String rating;
+    private Float rating;
 
-    public Comment(String username, String comment, String rating,String h_id) {
+    public Comment(String username, String comment, Float rating,String h_id) {
         this.username = username;
         this.comment = comment;
         this.rating = rating;
@@ -44,11 +44,11 @@ public class Comment {
         this.comment = comment;
     }
 
-    public String getRating() {
+    public Float getRating() {
         return rating;
     }
 
-    public void setRating(String rating) {
+    public void setRating(Float rating) {
         this.rating = rating;
     }
 

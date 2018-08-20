@@ -18,9 +18,10 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_view_comments"
         android:layout_width="match_parent"
-        android:layout_height="329dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_below="@+id/textView4" />
+        android:layout_marginBottom="45dp"
+        android:layout_below="@+id/userrating" />
 
     <RatingBar
         android:id="@+id/ratingBar"
@@ -58,7 +59,7 @@
         android:text="امتیاز کاربران" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/userrating"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"

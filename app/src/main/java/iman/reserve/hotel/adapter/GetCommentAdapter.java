@@ -13,6 +13,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import iman.reserve.hotel.R;
+import iman.reserve.hotel.activity.Fragments.TwoFragment;
 import iman.reserve.hotel.model.Comment;
 
 import static android.content.Context.MODE_PRIVATE;
@@ -38,15 +39,13 @@ public class GetCommentAdapter extends RecyclerView.Adapter<GetCommentAdapter.Co
     public void onBindViewHolder(final CommentViewHolder holder, final int position) {
 
 
-
-
         String username = "کاربر : " + dataList.get(position).getUN();
         holder.txtUSERNAME.setText(username);
 
         String comment = "نظر : " + dataList.get(position).getComment();
         holder.txtCOMMENT.setText(comment);
 
-        String rating = "امتیاز : " + dataList.get(position).getRating() + "از 5";
+        String rating = "امتیاز : " + dataList.get(position).getRating() + " از 5";
         holder.txtRATING.setText(rating);
 
 
