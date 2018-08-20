@@ -9,6 +9,12 @@
     <string name="tab_text_1">تاریخ ورود/خروج</string>
     <string name="tab_text_3">Future Development</string>
     <string name="title_activity_login">ورود</string>
-
+    <string name="title_activity_navigator">NavigatorActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="server_address">http://10.0.3.2/hotelPHP/</string>
 
 </resources>
