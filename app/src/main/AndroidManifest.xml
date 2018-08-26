@@ -14,11 +14,11 @@
             android:name=".activity.CityActivity"
             android:label="@string/app_name"
             android:parentActivityName=".activity.LoginActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activity.HotelActivity"
             android:parentActivityName=".activity.CityActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activity.ReserveActivity"
             android:label="@string/title_activity_reserve"
@@ -37,6 +37,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activity.MyReservesActivity"
+            android:label="@string/title_activity_my_reserves"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
