@@ -4,10 +4,13 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:fillViewport="true"
-
+    android:windowSoftInputMode="adjustNothing"
+    android:isScrollContainer="false"
     >
 
     <RelativeLayout
+
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -16,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-            android:layout_centerVertical="true"
+            android:layout_below="@+id/imageView"
             android:orientation="vertical"
             android:paddingLeft="24dp"
             android:paddingRight="24dp">
@@ -28,11 +31,10 @@
                 android:focusable="true"
                 android:focusableInTouchMode="true"
                 android:fontFamily="sans-serif-light"
+                android:gravity="center"
                 android:hint="نام کاربری"
                 android:textColor="#FF192133"
-                android:textColorHint="#A0192133"
-                android:gravity="center"
-                />
+                android:textColorHint="#A0192133" />
 
             <EditText
                 android:id="@+id/editPassword"
@@ -41,9 +43,9 @@
                 android:focusable="true"
                 android:focusableInTouchMode="true"
                 android:fontFamily="sans-serif-light"
-                android:inputType="textPassword"
-                android:hint="رمز عبور"
                 android:gravity="center"
+                android:hint="رمز عبور"
+                android:inputType="textPassword"
                 android:textColor="#FF192133"
                 android:textColorHint="#A0192133"
 
@@ -56,13 +58,12 @@
                 android:focusable="true"
                 android:focusableInTouchMode="true"
                 android:fontFamily="sans-serif-light"
+                android:gravity="center"
                 android:hint="ایمیل"
                 android:inputType="textEmailAddress"
                 android:textColor="#FF192133"
                 android:textColorHint="#A0192133"
-                android:visibility="gone"
-                android:gravity="center"
-                />
+                android:visibility="gone" />
 
             <EditText
                 android:id="@+id/editPhone"
@@ -71,13 +72,12 @@
                 android:focusable="true"
                 android:focusableInTouchMode="true"
                 android:fontFamily="sans-serif-light"
+                android:gravity="center"
                 android:hint="شماره تلفن"
-                android:inputType="phone"
+                android:inputType="phone|number"
                 android:textColor="#FF192133"
                 android:textColorHint="#A0192133"
-                android:visibility="gone"
-                android:gravity="center"
-                />
+                android:visibility="gone" />
 
             <Button
                 android:id="@+id/btnSignIn"

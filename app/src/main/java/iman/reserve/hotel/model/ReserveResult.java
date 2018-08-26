@@ -1,3 +1,4 @@
+/*
 package iman.reserve.hotel.model;
 
 import com.google.gson.annotations.SerializedName;
@@ -15,4 +16,4 @@ public class ReserveResult {
     public void setReserveResult(String result) {
         this.message = result;
     }
-}
+}*/

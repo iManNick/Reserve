@@ -1,6 +1,7 @@
 package iman.reserve.hotel.activity;
 import android.app.Activity;
 import android.content.Intent;
+import android.support.design.widget.Snackbar;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
@@ -15,7 +16,9 @@ import iman.reserve.hotel.R;
 
 
 public class DrawerUtil {
-    public static void getDrawer(final Activity activity, Toolbar toolbar) {
+
+
+        public static Drawer getDrawer(final Activity activity, Toolbar toolbar) {
         //if you want to update the items at a later time it is recommended to keep it in a variable
         PrimaryDrawerItem drawerEmptyItem = new PrimaryDrawerItem().withIdentifier(0).withName("");
         drawerEmptyItem.withEnabled(false);
@@ -88,12 +91,20 @@ public class DrawerUtil {
                             Intent intent = new Intent(activity, CityActivity.class);
                             view.getContext().startActivity(intent);
                         }
-
+                        else if (drawerItem.getIdentifier() == 2 && !(activity instanceof FavActivity)) {
+                            // load tournament screen
+                            Intent intent = new Intent(activity, FavActivity.class);
+                            view.getContext().startActivity(intent);
+                        }
 
                         else if (drawerItem.getIdentifier() == 3 && !(activity instanceof MyReservesActivity)) {
                             // load tournament screen
                             Intent intent = new Intent(activity, MyReservesActivity.class);
                             view.getContext().startActivity(intent);
+                        }
+                        else if (drawerItem.getIdentifier() == 5 ) {
+                            // load tournament screen
+                            Snackbar.make(view,"Developed by Iman NickAein",Snackbar.LENGTH_LONG).show();
                         }
 
 
@@ -114,7 +125,6 @@ public class DrawerUtil {
                 })
                 .build();
 
-
-
+        return result;
     }
 }

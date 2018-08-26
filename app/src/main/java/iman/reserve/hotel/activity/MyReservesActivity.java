@@ -11,6 +11,8 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.mikepenz.materialdrawer.Drawer;
+
 import java.util.ArrayList;
 
 import iman.reserve.hotel.R;
@@ -24,8 +26,17 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class MyReservesActivity extends AppCompatActivity {
-
+    private Drawer drawer;
     @Override
+    public void onBackPressed() {
+        if(drawer.isDrawerOpen())
+            drawer.closeDrawer();
+        else {
+            finish();
+        }
+    }
+
+            @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.my_reserves);
@@ -33,7 +44,7 @@ public class MyReservesActivity extends AppCompatActivity {
         setTitle("رزروهای من");
         setSupportActionBar(toolbar);
 
-        DrawerUtil.getDrawer(this,toolbar);
+        drawer =  DrawerUtil.getDrawer(this,toolbar);
 
         SharedPreferences prefs = getApplicationContext().getSharedPreferences("UserData", MODE_PRIVATE);
         String username = prefs.getString("username", "");

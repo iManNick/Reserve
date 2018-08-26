@@ -20,7 +20,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="45dp"
         android:layout_below="@+id/userrating" />
 
     <RatingBar
@@ -34,12 +33,11 @@
         android:id="@+id/commentText"
         android:layout_width="match_parent"
         android:layout_height="97dp"
-        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="نظر شما در مورد این هتل چیست؟"
-        />
+        android:inputType="textMultiLine" />
 
     <TextView
         android:id="@+id/textView2"

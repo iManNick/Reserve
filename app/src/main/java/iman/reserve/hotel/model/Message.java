@@ -3,16 +3,16 @@ package iman.reserve.hotel.model;
 import com.google.gson.annotations.SerializedName;
 
 
-public class SubmitComment {
+public class Message {
     @SerializedName("message")
     private String message;
 
 
-    public String getSubmitResult() {
+    public String getMessage() {
         return message;
     }
 
-    public void setSubmitResult(String result) {
+    public void setMessage(String result) {
         this.message = result;
     }
 }

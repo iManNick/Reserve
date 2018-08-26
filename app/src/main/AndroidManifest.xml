@@ -37,10 +37,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".activity.MyReservesActivity"
             android:label="@string/title_activity_my_reserves"
             android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.FavActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+
     </application>
 
 </manifest>
