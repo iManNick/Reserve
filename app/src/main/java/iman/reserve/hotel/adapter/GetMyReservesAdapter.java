@@ -2,6 +2,9 @@
 package iman.reserve.hotel.adapter;
 
 import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.support.design.widget.Snackbar;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,8 +14,11 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import iman.reserve.hotel.R;
+import iman.reserve.hotel.activity.ReserveActivity;
 import iman.reserve.hotel.model.Comment;
 import iman.reserve.hotel.model.MyReserve;
+
+import static android.content.Context.MODE_PRIVATE;
 
 
 public class GetMyReservesAdapter extends RecyclerView.Adapter<GetMyReservesAdapter.MyReserveViewHolder> {
@@ -34,7 +40,19 @@ public class GetMyReservesAdapter extends RecyclerView.Adapter<GetMyReservesAdap
     @Override
     public void onBindViewHolder(final MyReserveViewHolder holder, final int position) {
 
-
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(hContext,ReserveActivity.class);
+                //intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                //intent.putExtra("HOTELNAME",hotel.getName());
+                SharedPreferences prefs = hContext.getSharedPreferences("UserData", MODE_PRIVATE);
+                SharedPreferences.Editor editor = prefs.edit();
+                editor.putString("selectedhotel", dataList.get(position).getName());
+                editor.apply();
+                hContext.startActivity(intent);
+            }
+        });
         String id = "شماره رزرو : " + dataList.get(position).getR_id();
         holder.txtID.setText(id);
 

@@ -6,6 +6,7 @@
     android:fillViewport="true"
     android:windowSoftInputMode="adjustNothing"
     android:isScrollContainer="false"
+
     >
 
     <RelativeLayout
@@ -59,7 +60,7 @@
                 android:focusableInTouchMode="true"
                 android:fontFamily="sans-serif-light"
                 android:gravity="center"
-                android:hint="ایمیل"
+                android:hint="ایمیل به فرمت a@b.c"
                 android:inputType="textEmailAddress"
                 android:textColor="#FF192133"
                 android:textColorHint="#A0192133"
@@ -73,7 +74,7 @@
                 android:focusableInTouchMode="true"
                 android:fontFamily="sans-serif-light"
                 android:gravity="center"
-                android:hint="شماره تلفن"
+                android:hint="شماره تلفن به فرمت 9123456789"
                 android:inputType="phone|number"
                 android:textColor="#FF192133"
                 android:textColorHint="#A0192133"
@@ -92,6 +93,15 @@
                 android:layout_height="wrap_content"
                 android:text="ثبت نام"
                 android:textStyle="bold" />
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="بازگشت"
+                android:textStyle="bold"
+                android:visibility="gone"
+                />
+
 
         </LinearLayout>
 

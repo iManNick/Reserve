@@ -9,6 +9,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.View;
 import android.widget.Toast;
 
 import com.mikepenz.materialdrawer.Drawer;
@@ -43,9 +44,9 @@ public class MyReservesActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar4);
         setTitle("رزروهای من");
         setSupportActionBar(toolbar);
-
-        drawer =  DrawerUtil.getDrawer(this,toolbar);
-
+        getWindow().getDecorView().setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
+        drawer =  DrawerUtil.getDrawer(this,toolbar,getApplicationContext());
+        drawer.setSelection(3);
         SharedPreferences prefs = getApplicationContext().getSharedPreferences("UserData", MODE_PRIVATE);
         String username = prefs.getString("username", "");
 
@@ -65,7 +66,7 @@ public class MyReservesActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<MyReserveList> call, Throwable t) {
-                Toast.makeText(getApplicationContext(), "Something went wrong...Please try later!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), R.string.no_internet, Toast.LENGTH_SHORT).show();
             }
         });
 

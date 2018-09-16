@@ -10,5 +10,5 @@ public interface GetFavDataService {
     @POST("getfav.php")
     Call<HotelList> getFavData(@Query("username") String username);
     @POST("setfav.php")
-    Call<Message> setFavData(@Query("username") String username, @Query("h_id") int h_id);
+    Call<Message> setFavData(@Query("hotelname") String hotelname, @Query("username") String username);
 }

@@ -8,7 +8,7 @@ import retrofit2.http.Query;
 public interface SubmitCommentService {
     @GET("submitcomments.php")
     Call<Message> getSubmitData(
-            @Query("h_id") String hotelId,
+            @Query("hotelname") String hotelname,
             @Query("username") String username,
             @Query("comment") String comment,
             @Query("rating") float rating

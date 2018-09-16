@@ -7,5 +7,5 @@ import retrofit2.http.Query;
 
 public interface GetCommentDataService {
     @POST("getcomments.php")
-    Call<CommentList> getCommentData(@Query("h_id") int hotelNo);
+    Call<CommentList> getCommentData(@Query("hotelname") String hotelname);
 }

@@ -1,6 +1,8 @@
 package iman.reserve.hotel.activity;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.design.widget.Snackbar;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -14,11 +16,13 @@ import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 
 import iman.reserve.hotel.R;
 
+import static android.content.Context.MODE_PRIVATE;
+
 
 public class DrawerUtil {
 
 
-        public static Drawer getDrawer(final Activity activity, Toolbar toolbar) {
+        public static Drawer getDrawer(final Activity activity, Toolbar toolbar,final Context context) {
         //if you want to update the items at a later time it is recommended to keep it in a variable
         PrimaryDrawerItem drawerEmptyItem = new PrimaryDrawerItem().withIdentifier(0).withName("");
         drawerEmptyItem.withEnabled(false);
@@ -109,6 +113,12 @@ public class DrawerUtil {
 
 
                         else if (drawerItem.getIdentifier() == 6 && !(activity instanceof LoginActivity)) {
+                            SharedPreferences prefs = context.getSharedPreferences("UserData", MODE_PRIVATE);
+                            SharedPreferences.Editor editor = prefs.edit();
+                            editor.putString("username", "");
+                            editor.putString("password", "");
+                            editor.apply();
+
                             // load tournament screen
                             Intent intent = new Intent(activity, LoginActivity.class);
                             view.getContext().startActivity(intent);

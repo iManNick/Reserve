@@ -19,13 +19,16 @@ public class Room {
     @SerializedName("totroom")
     private String totroom;
 
-    public Room(String type, String food, String price, String avroom, String size) {
+    public Room(String type, String food, String price, String avroom, String size,String totroom) {
         this.type = type;
         this.food = food;
         this.price = price;
         this.avroom = avroom;
         this.size = size;
+        this.totroom = totroom;
     }
+
+
 
     public String getType() {
         return type;
@@ -65,6 +68,14 @@ public class Room {
 
     public void setSize(String size) {
         this.size = size;
+    }
+
+    public String getTotroom() {
+        return totroom;
+    }
+
+    public void setTotroom(String totroom) {
+        this.totroom = totroom;
     }
 
 }

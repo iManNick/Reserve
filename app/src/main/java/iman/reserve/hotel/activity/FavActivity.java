@@ -9,6 +9,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.View;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
@@ -42,8 +43,9 @@ public class FavActivity extends HotelActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar2);
         toolbar.setTitle("علاقه مندی ها");
-        drawer = DrawerUtil.getDrawer(this, toolbar);
-
+        getWindow().getDecorView().setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
+        drawer = DrawerUtil.getDrawer(this, toolbar,getApplicationContext());
+        drawer.setSelection(2);
         initCollapsingToolbar("علاقه مندی ها", "علاقه مندی ها");
 
         RecyclerView recyclerView = findViewById(R.id.recycler_view_hotel);

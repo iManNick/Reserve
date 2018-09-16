@@ -6,7 +6,8 @@
     <string name="backdrop_title">سامانه رزرو آنلاین هتل</string>
     <string name="backdrop_subtitle">شهر مورد نظر خود را انتخاب کنید</string>
     <string name="title_activity_reserve">رزرو</string>
-    <string name="tab_text_1">تاریخ ورود/خروج</string>
+    <string name="tab_text_1">رزرو</string>
+    <string name="no_internet">عدم دسترسی به سرور! لطفا اینترنت خود را بررسی کنید"</string>
     <string name="tab_text_3">Future Development</string>
     <string name="title_activity_login">ورود</string>
     <string name="title_activity_navigator">NavigatorActivity</string>

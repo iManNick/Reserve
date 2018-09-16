@@ -3,14 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.Fragments.OneFragment">
+    tools:context=".activity.Fragments.OneFragment"
+    >
 
 
     <EditText
         android:id="@+id/checkIn"
         android:layout_width="190dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/checkInText"
         android:ems="10"
         android:focusable="false"
@@ -23,7 +24,7 @@
         android:id="@+id/checkOut"
         android:layout_width="190dp"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/checkOutText"
+        android:layout_alignParentEnd="true"
         android:layout_alignTop="@+id/checkIn"
         android:ems="10"
         android:focusable="false"
@@ -36,7 +37,7 @@
         android:id="@+id/checkInText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:text="تاریخ ورود"
         android:textAlignment="center"
@@ -46,7 +47,7 @@
         android:id="@+id/checkOutText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
         android:text="تاریخ خروج"
         android:textAlignment="center"
@@ -89,5 +90,13 @@
         android:layout_below="@+id/rezfinal"
 
         />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/spinner"
+        android:layout_centerHorizontal="true"
+        android:text="انتخاب اتاق" />
 </RelativeLayout>
 
