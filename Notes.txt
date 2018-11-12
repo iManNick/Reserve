@@ -1,0 +1,1 @@
+http://10.0.3.2 is the localhost rerouting address. This address works exclusively if you’re using the Genymotion emulator. For the standard Android Emulator use http://10.0.2.2. If you’re running the application on your own device using your computer’s WIFI address instead. Example: http://192.168.0.143.
