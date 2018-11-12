@@ -38,8 +38,9 @@ public class FavActivity extends HotelActivity {
     }
         @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hotelist);
+//        setContentView(R.layout.activity_hotelist);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar2);
         toolbar.setTitle("علاقه مندی ها");
@@ -48,26 +49,30 @@ public class FavActivity extends HotelActivity {
         drawer.setSelection(2);
         initCollapsingToolbar("علاقه مندی ها", "علاقه مندی ها");
 
-        RecyclerView recyclerView = findViewById(R.id.recycler_view_hotel);
+        //RecyclerView recyclerView = findViewById(R.id.recycler_view_hotel);
 
         //Toast.makeText(this, city,Toast.LENGTH_SHORT);
 
 
         //adapter = new HotelAdapter(this, hotelList);
 
-        RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(this, 1);
-        recyclerView.setLayoutManager(mLayoutManager);
-        recyclerView.addItemDecoration(new GridSpacingItemDecoration(2, dpToPx(10), true));
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
+        //RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(this, 1);
+//        recyclerView.setLayoutManager(mLayoutManager);
+//        recyclerView.addItemDecoration(new GridSpacingItemDecoration(2, dpToPx(10), true));
+//        recyclerView.setItemAnimator(new DefaultItemAnimator());
         //recyclerView.setAdapter(adapter);
+
+        Glide.with(this).load(R.drawable.favcover).into((ImageView) findViewById(R.id.backdrop2));
+    }
+    @Override
+    protected void call(){
         GetFavDataService service = RetrofitInstance.getRetrofitInstance().create(GetFavDataService.class);
 
         /*Call the method with parameter in the interface to get the employee data*/
         SharedPreferences prefs = getSharedPreferences("UserData", MODE_PRIVATE);
         String username = prefs.getString("username","");
 
-        prepareHotels(service.getFavData(username),recyclerView,true);
-        Glide.with(this).load(R.drawable.favcover).into((ImageView) findViewById(R.id.backdrop2));
+        prepareHotels(service.getFavData(username),true);
     }
 }
 

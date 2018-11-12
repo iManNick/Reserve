@@ -68,12 +68,17 @@ public class GetMyReservesAdapter extends RecyclerView.Adapter<GetMyReservesAdap
         String checkOut = "تاریخ خروج : " + dataList.get(position).getR_chkoutdt();
         holder.txtCHECKOUT.setText(checkOut);
 
-        String numrooms = "تعداد اتاق : " + dataList.get(position).getR_rooms();
+        int NUMBEROFROOMS = Integer.parseInt(dataList.get(position).getR_rooms());
+        String numrooms = "تعداد اتاق : " + NUMBEROFROOMS;
         holder.txtNUMROOMS.setText(numrooms);
 
-
-        //String roomnumber = "شماره اتاق : " + dataList.get(position).getRoom_number();
-        //holder.txtROOMNUMBER.setText(roomnumber);
+        int ROOMNUMBER = Integer.parseInt(dataList.get(position).getRoom_number()) ;
+        String roomnumber = "شماره اتاق : " + ROOMNUMBER;
+        if( NUMBEROFROOMS > 1){
+            int lastroom = ROOMNUMBER + NUMBEROFROOMS;
+            roomnumber += " تا " + lastroom;
+        }
+        holder.txtROOMNUMBER.setText(roomnumber);
 
 
 
@@ -116,6 +121,7 @@ public class GetMyReservesAdapter extends RecyclerView.Adapter<GetMyReservesAdap
             txtCHECKIN =  itemView.findViewById(R.id.txt_my_reserve_checkIn_date);
             txtCHECKOUT =  itemView.findViewById(R.id.txt_my_reserve_checkOut_date);
             txtNUMROOMS =  itemView.findViewById(R.id.txt_my_reserve_number_of_rooms);
+            txtROOMNUMBER =  itemView.findViewById(R.id.txt_my_reserve_room_numbers);
             //txtROOMNUMBER =  itemView.findViewById(R.id.txt_my_reserve_room_number);
             txtID = itemView.findViewById(R.id.txt_my_reserve_id);
             //itemView.setOnClickListener(this);

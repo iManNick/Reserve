@@ -1,4 +1,4 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,89 +7,134 @@
     >
 
 
-    <EditText
-        android:id="@+id/checkIn"
-        android:layout_width="190dp"
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/checkInText"
-        android:ems="10"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:focusable="false"
-        android:inputType="date"
-        android:labelFor="@+id/checkInText"
-        android:text="سال/ماه/روز"
-        android:textAlignment="center" />
+        android:hint="تاریخ خروج"
+        app:hintEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textInputLayout"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <EditText
-        android:id="@+id/checkOut"
-        android:layout_width="190dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/checkIn"
-        android:ems="10"
-        android:focusable="false"
-        android:inputType="date"
-        android:labelFor="@+id/checkInText"
-        android:text="سال/ماه/روز"
-        android:textAlignment="center" />
+        <EditText
+            android:id="@+id/checkOut"
 
-    <TextView
-        android:id="@+id/checkInText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:text="تاریخ ورود"
-        android:textAlignment="center"
-        android:textStyle="bold" />
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="date"
+            android:text="سال/ماه/روز"
+            android:textAlignment="center" />
 
-    <TextView
-        android:id="@+id/checkOutText"
-        android:layout_width="wrap_content"
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:text="تاریخ خروج"
-        android:textAlignment="center"
-        android:textStyle="bold" />
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="تاریخ ورود"
+        app:hintEnabled="true"
+        app:layout_constraintEnd_toStartOf="@+id/textInputLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <EditText
+            android:id="@+id/checkIn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="date"
+            android:text="سال/ماه/روز"
+            android:textAlignment="center" />
+    </android.support.design.widget.TextInputLayout>
 
 
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_below="@+id/textView" />
+
+        android:dropDownWidth="match_parent"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/select_number_of_rooms_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/select_number_of_rooms_layout"
+        app:layout_constraintTop_toTopOf="@+id/select_number_of_rooms_layout" />
 
     <Button
-
         android:id="@+id/rezfinal"
-        android:layout_width="wrap_content"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/checkIn"
-        android:background="@color/colorPrimary"
-        android:text="رزرو"
-        android:textColor="@android:color/white" />
+        android:layout_marginStart="8dp"
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+
+        android:layout_marginEnd="8dp"
+        android:text="رزرو"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/select_number_of_rooms_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_below="@+id/checkIn"
-        android:text=" تعداد اتاق"
-        android:textAlignment="center"
-        android:textStyle="bold" />
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="تعداد اتاق"
+        app:hintEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
+
+        <EditText
+            android:id="@+id/select_number_of_rooms_editText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:focusable="false"
+
+            android:text=" "
+
+
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="104dp" />
+    </android.support.design.widget.TextInputLayout>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_view_room_list"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_height="0dp"
         android:layout_below="@+id/rezfinal"
+        android:layout_alignParentBottom="true"
 
-        />
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/rezfinal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_number_of_rooms_layout" />
 
     <TextView
         android:id="@+id/textView4"
@@ -97,6 +142,15 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/spinner"
         android:layout_centerHorizontal="true"
-        android:text="انتخاب اتاق" />
-</RelativeLayout>
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="انتخاب اتاق"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/select_number_of_rooms_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
+        app:layout_constraintVertical_bias="0.578" />
+</android.support.constraint.ConstraintLayout>
 

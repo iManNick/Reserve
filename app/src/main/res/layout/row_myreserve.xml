@@ -56,6 +56,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
+        <!-- TextView Room numbers-->
+        <TextView
+            android:id="@+id/txt_my_reserve_room_numbers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
 
     </LinearLayout>

@@ -6,39 +6,56 @@
     >
 
     <Button
+        style="@style/Widget.MaterialComponents.Button"
+        android:textSize="14sp"
 
         android:id="@+id/commentbut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignTop="@+id/ratingBar"
-        android:background="@color/colorPrimary"
+
         android:text="ثبت نظر"
-        android:textColor="@android:color/white" />
+         />
 
     <RatingBar
         android:id="@+id/ratingBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/commentText" />
+        android:layout_below="@+id/commentInputLayout" />
 
-    <EditText
-        android:id="@+id/commentText"
+    <android.support.design.widget.TextInputLayout
+        android:focusedByDefault="false"
+        android:id="@+id/commentInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
         android:layout_width="match_parent"
-        android:layout_height="97dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:ems="10"
-        android:hint="نظر شما در مورد این هتل چیست؟"
-        android:inputType="textMultiLine" />
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        >
+
+        <EditText
+            android:lines="2"
+            android:maxLines="2"
+            android:minLines="2"
+
+            android:id="@+id/commentText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:hint="نظر شما در مورد این هتل چیست؟"
+            android:inputType="textMultiLine" />
+    </android.support.design.widget.TextInputLayout>
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="88dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/ratingBar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="7dp"
         android:text=" نظر کاربران"
         android:textSize="19sp" />
 
@@ -46,17 +63,23 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
         android:layout_below="@+id/commentbut"
-        android:text="امتیاز کاربران" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="4dp"
+        android:text="میانگین امتیاز کاربران"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/userrating"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
         android:layout_below="@+id/textView3"
-        android:text="0 از 5" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="40dp"
+        android:text="0 از 5"
+        android:textStyle="bold" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_view_comments"

@@ -13,8 +13,18 @@ public class MyReserve {
     private String r_rooms;
     @SerializedName("r_type")
     private String r_type;
+    @SerializedName("hotel")
+    private String hotelID;
+    @SerializedName("h_id")
+    private String h_id;
+    @SerializedName("city")
+    private String city;
     @SerializedName("name")
     private String name;
+    @SerializedName("numOfStars")
+    private String numOfStars;
+    @SerializedName("desc")
+    private String desc;
     @SerializedName("room_number")
     private String room_number;
 
