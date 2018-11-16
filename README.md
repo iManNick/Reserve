@@ -1,18 +1,18 @@
 
 # Hotel Reservation System
 
-**Documentation (Persian)
+**<< Documentation (Persian) >>**
 https://drive.google.com/open?id=0B6WO8-L0mGwTd3l4M3FtU2oxX0NqTVYyQU5GUFVUaGphdWxR
 
 You can download the latest version of app(apk file) from here:
 https://drive.google.com/file/d/1ajBvBni4qpcjxkEj8GIE4zQ10hHXzKkD/view
-**If you failed to connect to my server use a vpn!
+**If you failed to connect to my server use a vpn!**
 
 
 If you want to use a local server make sure to change the current ip in the retrofit config java file to your ip,
 also in php config file use proper username and password for accessing the database.
 
-**Future development suggestions
+**Future development suggestions**
 >make a new app for hotel managers;)
 
 >app + server:
