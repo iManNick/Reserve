@@ -11,12 +11,13 @@ https://drive.google.com/file/d/1ajBvBni4qpcjxkEj8GIE4zQ10hHXzKkD/view)
 
 
 If you want to use a local server make sure to change the current ip in the retrofit config java file to your ip,
+
 also in php config file use proper username and password for accessing the database.
 
 **Future development suggestions**
-*make a new app for hotel managers;)
+* make a new app for hotel managers;)
 
-*app + server:
+* app + server:
 - [ ] mvvm architecture
 - [ ] ability to remove reservations
 - [ ] moving pictures to server and using glide to load them
@@ -36,7 +37,7 @@ also in php config file use proper username and password for accessing the datab
 - [ ] settings
 - [ ] search
 
-*security:
+* security:
 - [ ] using a proper php framework
 - [ ] give a token for verifying user requests
 - [ ] give a random reservation code
