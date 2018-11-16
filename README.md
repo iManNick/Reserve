@@ -11,8 +11,8 @@ https://drive.google.com/file/d/1ajBvBni4qpcjxkEj8GIE4zQ10hHXzKkD/view)
 
 
 If you want to use a local server make sure to change the current ip in the retrofit config java file to your ip,
-
 also in php config file use proper username and password for accessing the database.
+
 
 **Future development suggestions**
 * make a new app for hotel managers ;)
