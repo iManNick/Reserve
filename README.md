@@ -6,6 +6,7 @@ https://drive.google.com/open?id=0B6WO8-L0mGwTd3l4M3FtU2oxX0NqTVYyQU5GUFVUaGphdW
 
 You can download the latest version of app(apk file) from [here](
 https://drive.google.com/file/d/1ajBvBni4qpcjxkEj8GIE4zQ10hHXzKkD/view)
+
 **If you failed to connect to my server use a vpn!**
 
 
@@ -16,27 +17,27 @@ also in php config file use proper username and password for accessing the datab
 *make a new app for hotel managers;)
 
 *app + server:
--[ ] mvvm architecture
--[ ] ability to remove reservations
--[ ] moving pictures to server and using glide to load them
--[ ] sms verification for registration
--[ ] ability to remove favs
--[ ] new design ofc
--[ ] getting in and out dates first and then showing available rooms in those dates! (requires huge changes in php files)
--[ ] getting number of hotels in each city from server
--[ ] saving hotel and user data locally
--[ ] using saved favs local data to show faved hotels in a city's hotel list
--[ ] show location of hotels on map
--[ ] user profile
--[ ] add all strings to strings.xml and add other languages
--[ ] in comment section show if the user has made a reservation in the hotel
--[ ] sorting, rating and reporting comments
--[ ] adding a back button for all activities, and only showing navigation drawer in the city activity
--[ ] settings
--[ ] search
+- [ ] mvvm architecture
+- [ ] ability to remove reservations
+- [ ] moving pictures to server and using glide to load them
+- [ ] sms verification for registration
+- [ ] ability to remove favs
+- [ ] new design ofc
+- [ ] getting in and out dates first and then showing available rooms in those dates! (requires huge changes in php files)
+- [ ] getting number of hotels in each city from server
+- [ ] saving hotel and user data locally
+- [ ] using saved favs local data to show faved hotels in a city's hotel list
+- [ ] show location of hotels on map
+- [ ] user profile
+- [ ] add all strings to strings.xml and add other languages
+- [ ] in comment section show if the user has made a reservation in the hotel
+- [ ] sorting, rating and reporting comments
+- [ ] adding a back button for all activities, and only showing navigation drawer in the city activity
+- [ ] settings
+- [ ] search
 
 *security:
--[ ] using a proper php framework
--[ ] give a token for verifying user requests
--[ ] give a random reservation code
+- [ ] using a proper php framework
+- [ ] give a token for verifying user requests
+- [ ] give a random reservation code
 
