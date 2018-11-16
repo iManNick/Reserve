@@ -17,7 +17,7 @@ also in php config file use proper username and password for accessing the datab
 **Future development suggestions**
 * make a new app for hotel managers ;)
 
-* app + server:
+* app + server 
    - [ ] mvvm architecture
    - [ ] ability to remove reservations
    - [ ] moving pictures to server and using glide to load them
@@ -25,19 +25,19 @@ also in php config file use proper username and password for accessing the datab
    - [ ] ability to remove favs
    - [ ] new design ofc
    - [ ] getting in and out dates first and then showing available rooms in those dates! (requires huge changes in php files)
-   - [ ] getting number of hotels in each city from server
+   - [ ] getting the number of hotels in each city from server
    - [ ] saving hotel and user data locally
    - [ ] using saved favs local data to show faved hotels in a city's hotel list
-   - [ ] show location of hotels on map
+   - [ ] showing locations of hotels on a map
    - [ ] user profile
-   - [ ] add all strings to strings.xml and add other languages
-   - [ ] in comment section show if the user has made a reservation in the hotel
+   - [ ] adding all strings to strings.xml and add other languages
+   - [ ] in comment section showing if the user has made a reservation in the hotel
    - [ ] sorting, rating and reporting comments
    - [ ] adding a back button for all activities, and only showing navigation drawer in the city activity
    - [ ] settings
    - [ ] search
 
-* security:
+* security
    - [ ] using a proper php framework
    - [ ] give a token for verifying user requests
    - [ ] give a random reservation code
